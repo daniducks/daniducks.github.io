@@ -1,9 +1,7 @@
 # Site settings
-title: Portfolio
+theme: jekyll-theme-minimal
+title: DanielleMPortfolio
 author:
   name: Danielle Malicdem
-  email: danitella234@icloud.com
 description: "Danielle Malicdem's portfolio website"
 
-# Build settings
-remote_theme: jekyll/minima
