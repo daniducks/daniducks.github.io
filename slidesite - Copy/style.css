@@ -1,0 +1,75 @@
+
+
+/* import css files */
+@import url(sections/navbar.css);
+@import url(sections/home.css);
+@import url(sections/projects.css);
+
+
+:root {
+    
+    --primary-color: rgb(228, 187, 100);
+    --secondary-color: rgb(94, 98, 198);
+    
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body{
+    overflow-x : hidden;
+}
+
+/* .hero {
+    overflow: hidden;
+    overflow-x: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: #eae3ca;
+} */
+
+.canvas {
+
+    overflow-x: hidden;
+    width: 100vw;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit:fill;
+    background-color:#eae3ca ;
+    display: block;
+}
+
+/* .scroll-text{
+    position: fixed;
+    text-transform: lowercase;
+    rotate: -14deg;
+    z-index: 2;
+    color: var(--primary-color);
+    background-color: transparent;
+    font-size: 8em;
+    left: 22%;
+    bottom: 45%;
+    transform: translate(-10%, -25%);
+} */
+
+
+.hidden {
+    opacity: 0;
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+}

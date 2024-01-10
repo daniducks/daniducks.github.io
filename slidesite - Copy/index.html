@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+
+    <link rel="stylesheet" href="https://use.typekit.net/yhz4ggh.css">
+</head>
+<body>
+
+    <!-- menu thing -->
+    <header class="header">
+      <a href="#" class="title">PORTFOLIO</a>
+  
+      <div class="header_overlay"></div>
+
+      <div class="hamburger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <nav class="navbar">
+        <a href="#aboutme">About Me</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+          navBar = document.querySelector(".navbar");
+          navBar.classList.toggle("active");
+        }
+    </script>
+    <canvas class="canvas"></canvas>
+    <section id="aboutme" class="AboutMe" class="hidden">
+        <div class="image"></div>
+          <img src="Assets/placeholder.jpg" alt="placeholder">
+        <div class="details">
+          <h1>About Me</h1>
+          <p>Hii! My name is <em>Danielle Grace Taguiam Malicdem</em>, but I more commonly go as Dani. My main interests include <em>art & design as well as coding.</em> Both of which I often combine, as displayed in this portfolio website.</p>
+        </div>
+
+    </section>
+    <section id="achievements" class="achievements" class ="hidden">
+
+      <h1>Achievements</h1>
+    </section>
+
+    <insertion-point></insertion-point>
+
+    <section id = "projects" class="projects" class="hidden">
+ 
+      <div class="project-container">
+        <h1>Projects</h1>
+      </div>
+
+      <div class="projects-gallery-container">
+        <div class="column">
+          <div class="box">
+            <img src="./Assets/ProjGallery/1.png" alt="img">
+          </div>
+          <div class="box">
+            <img src="./Assets/ProjGallery/2.jpg" alt="img">
+          </div>
+          <div class="box">
+            <img src="./Assets/ProjGallery/3.jpg" alt="img">
+          </div>
+        </div>  
+        
+        <div class="column">
+          <div class="box">
+            <img src="./Assets/ProjGallery/4.jpeg" alt="img">
+          </div>
+          <div class="box">
+            <img src="./Assets/ProjGallery/5.png" alt="img">
+          </div>
+          <div class="box">
+            <img src="./Assets/ProjGallery/6.jpeg" alt="img">
+          </div> 
+        </div>
+      </div>
+      
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js" integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js" integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

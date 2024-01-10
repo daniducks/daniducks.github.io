@@ -1,0 +1,103 @@
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 30px;
+    background-color:rgb(234, 227, 202);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.title {
+    font-family: "soleil", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    color: var(--secondary-color);
+    text-decoration:wavy;
+    /* text-shadow: 1px 1px 2px rgb(86, 74, 125); */
+    background-color: transparent
+} 
+
+.navbar a {
+    position: relative;
+    font-family: "soleil", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--secondary-color);
+    text-decoration: none;
+    /* text-shadow: 1px 1px 2px rgb(86, 74, 125); */
+    text-transform: lowercase;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary-color);
+    transition: 0.3s;
+}
+
+.navbar a:hover::before {
+    width: 100%;
+
+}
+
+    @media only screen and (max-width: 715px) {
+        .hamburger {
+            display: block;
+            cursor: pointer;
+
+        }
+
+        .hamburger .line {
+            width: 30px;
+            height: 3px;
+            background: var(--secondary-color);
+            margin: 6px 0;
+        }
+
+        .navbar {
+            height: 0;
+            position:absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            width: 100vw;
+            background: var(--primary-color);
+            backdrop-filter: blur(6px);
+            transition: 0.2s;
+            overflow: hidden;
+
+            z-index: -1;
+        }
+
+        .navbar.active {
+            height: 380px;
+
+        }
+
+        .navbar a {
+            display: block;
+            width: fit-content;
+            margin: 80px auto 0 auto;
+            text-align: center;
+            transform: 0.5s;
+        }
+
+        .navbar.active a {
+            opacity: 1;
+        }
+
+
+    }
